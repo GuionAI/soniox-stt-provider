@@ -1,0 +1,29 @@
+{
+  "name": "@guionai/soniox-stt-provider",
+  "version": "2026.8.1",
+  "description": "Soniox async speech-to-text (media-understanding) provider for OpenClaw.",
+  "type": "module",
+  "peerDependencies": {
+    "openclaw": ">=2026.8.1"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "install": {
+      "clawhubSpec": "clawhub:guionai/soniox-stt-provider",
+      "defaultChoice": "clawhub",
+      "minHostVersion": ">=2026.8.1"
+    },
+    "compat": {
+      "pluginApi": ">=2026.8.1"
+    },
+    "build": {
+      "openclawVersion": "2026.8.1",
+      "pluginSdkVersion": "2026.8.1"
+    },
+    "release": {
+      "publishToClawHub": true
+    }
+  }
+}
